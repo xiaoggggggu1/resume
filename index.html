@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>张小可 · 个人求职主页｜中学数学教师</title>
+<meta name="description" content="张小可，可瓦师范大学应用数学专业 2026 届毕业生，求职意向：中学数学教师。累计 60 节高中数学授课经验，负责备课、授课与学情跟进全流程。">
+<meta name="theme-color" content="#EFEAE1">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" as="image" href="assets/hero-poster.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="张小可 · 个人求职主页｜中学数学教师">
+<meta property="og:description" content="应用数学专业 2026 届，累计 60 节高中数学授课经验。点开首页，和我说声你好。">
+<meta property="og:image" content="assets/hero-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/styles.css">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.meters .m-bar i{width:var(--v)}</style></noscript>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#top">
+    <span class="brand-mark">张</span>
+    <span class="brand-text"><b>张小可</b><i>ZHANG XIAOKE</i></span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="主导航">
+    <a href="#about" data-nav><span data-i18n="nav.about">关于我</span></a>
+    <a href="#skills" data-nav><span data-i18n="nav.skills">能力与兴趣</span></a>
+    <a href="#works" data-nav><span data-i18n="nav.works">实践</span></a>
+    <a href="#resume" data-nav><span data-i18n="nav.resume">履历</span></a>
+    <a href="#contact" data-nav><span data-i18n="nav.contact">联系</span></a>
+  </nav>
+
+  <div class="topbar-actions">
+    <button class="lang" id="langBtn" type="button" aria-label="切换中文 / English">EN</button>
+    <button class="btn btn-sm btn-ink" id="sayHiTop" type="button" data-i18n="nav.hi">打个招呼</button>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" data-i18n="nav.menu">菜单</button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <h1 class="sr-only">张小可 · 中学数学教师求职主页</h1>
+  <div class="hero-stage">
+    <div class="hero-media" id="heroMedia">
+      <img class="hero-poster" src="assets/hero-poster.jpg" width="1600" height="920"
+           alt="张小可坐在黄色书桌前用笔记本电脑工作，背景手绘标题写着「你好，我是张小可。」">
+
+      <video class="hero-video loop" id="videoLoop" muted loop playsinline preload="auto"
+             poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/hero-loop.mp4" type="video/mp4">
+      </video>
+
+      <video class="hero-video intro" id="videoIntro" muted playsinline preload="auto"
+             poster="assets/hero-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/hero-working.mp4" type="video/mp4">
+      </video>
+
+      <video class="hero-video greet" id="videoGreet" muted playsinline preload="auto"
+             poster="assets/greet-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/hero-greet.mp4" type="video/mp4">
+      </video>
+
+      <button class="hero-hit" id="heroHit" type="button" aria-describedby="heroTip">
+        <span class="sr-only" data-i18n="hero.hit">点击画面，与张小可打个招呼</span>
+      </button>
+
+      <span class="corner tl" aria-hidden="true"></span>
+      <span class="corner tr" aria-hidden="true"></span>
+      <span class="corner bl" aria-hidden="true"></span>
+      <span class="corner br" aria-hidden="true"></span>
+
+      <span class="stage-tag" aria-hidden="true">
+        <span class="dot"></span><span data-i18n="hero.tag">点击画面 · 打招呼</span>
+      </span>
+
+      <button class="explore" id="exploreBtn" type="button">
+        <span data-i18n="hero.explore">向下探索</span><span class="arrow" aria-hidden="true">↓</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="hero-foot">
+    <div class="hero-foot-left">
+      <p class="eyebrow"><span data-i18n="hero.eyebrow">2026 届 · 应用数学 · 可瓦师范大学</span></p>
+      <p class="hero-role">
+        <span class="label" data-i18n="hero.roleLabel">求职意向</span>
+        <span class="value" data-i18n="hero.role">中学数学教师</span>
+      </p>
+    </div>
+    <div class="hero-foot-right">
+      <p class="hero-tip" id="heroTip">
+        <span data-i18n="hero.tip">点击画面中的我，或按</span> <kbd>H</kbd>
+      </p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" id="sayHi" type="button">
+          <span data-i18n="hero.hi">打个招呼</span><span class="ico" aria-hidden="true">✋</span>
+        </button>
+        <a class="btn btn-ghost" href="#about"><span data-i18n="hero.browse">向下浏览</span> <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack">
+    <span>备课</span><i>✳</i><span>授课</span><i>✳</i><span>学情跟进</span><i>✳</i><span>班级管理</span><i>✳</i>
+    <span>教研协作</span><i>✳</i><span>板书设计</span><i>✳</i><span>家校沟通</span><i>✳</i><span>数据分析</span><i>✳</i>
+  </div>
+</div>
+
+<main>
+  <!-- ============ 01 ABOUT ============ -->
+  <section class="sec" id="about">
+    <div class="sec-head reveal">
+      <span class="idx">01</span>
+      <p class="eyebrow">ABOUT <span class="sep">/</span> <span data-i18n="about.eyebrow">关于我</span></p>
+    </div>
+
+    <div class="about-grid">
+      <figure class="about-photo reveal">
+        <img src="assets/portrait.jpg" width="536" height="552"
+             alt="张小可的半身人像：深色西装外套、白衬衫、短卷发">
+        <figcaption data-i18n="about.caption">张小可 / 2004.03 / 广东 · 深圳</figcaption>
+      </figure>
+
+      <div class="about-body">
+        <h2 class="statement reveal">
+          <span class="hl" data-i18n="about.h1a">把抽象的数学</span><span data-i18n="about.h1b">，讲成学生听得懂的故事。</span>
+        </h2>
+
+        <p class="lead reveal" data-i18n="about.lead">
+          我是张小可，可瓦师范大学应用数学专业 2026 届毕业生。四年里我把大部分时间花在两件事上：把数学学扎实，以及把「怎么教」这件事反复练。
+        </p>
+        <p class="reveal" data-i18n="about.p">
+          在可画第二中学的实习里，我独立完成了高中数学的教学任务，累计授课 60 节——从备课、板书到作业讲评，把整条教学链路完整跑过一遍。习惯先想清楚「学生会卡在哪一步」，再决定这一节课怎么讲。
+        </p>
+
+        <ul class="traits">
+          <li class="reveal">
+            <span class="t-num">01</span>
+            <b data-i18n="about.t1">教学全流程</b>
+            <span data-i18n="about.t1d">备课、授课、学情跟进能独立跑通，不依赖别人兜底。</span>
+          </li>
+          <li class="reveal">
+            <span class="t-num">02</span>
+            <b data-i18n="about.t2">逻辑严谨</b>
+            <span data-i18n="about.t2d">数学训练的底子，讲题步骤清晰，细节不放过。</span>
+          </li>
+          <li class="reveal">
+            <span class="t-num">03</span>
+            <b data-i18n="about.t3">亲和耐心</b>
+            <span data-i18n="about.t3d">热情友善，愿意花时间理解学生真正卡住的地方。</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><b data-count="60">60</b><span class="unit" data-i18n="stat1u">节</span><span class="cap" data-i18n="stat1">高中数学累计授课</span></div>
+      <div class="stat"><b data-count="3.7" data-dec="1">3.7</b><span class="unit">/ 4.0</span><span class="cap" data-i18n="stat2">专业 GPA</span></div>
+      <div class="stat"><b data-count="2">2</b><span class="unit" data-i18n="stat3u">段</span><span class="cap" data-i18n="stat3">学生会与校园媒体任职</span></div>
+      <div class="stat"><b data-count="5">5</b><span class="unit" data-i18n="stat4u">项</span><span class="cap" data-i18n="stat4">证书与语言能力</span></div>
+    </div>
+
+    <blockquote class="quote reveal">
+      <p data-i18n="about.quote">性格沉稳内敛、待人真诚谦和；对教育教学与班级管理始终保持高度热忱，也有明确的职业规划。</p>
+      <cite data-i18n="about.quoteSrc">自我评价</cite>
+    </blockquote>
+  </section>
+
+  <!-- ============ 02 SKILLS ============ -->
+  <section class="sec alt" id="skills">
+    <div class="sec-head reveal">
+      <span class="idx">02</span>
+      <p class="eyebrow">SKILLS <span class="sep">/</span> <span data-i18n="skills.eyebrow">能力与兴趣</span></p>
+    </div>
+
+    <div class="skills-block reveal">
+      <h3 class="col-title" data-i18n="skills.t1">教学与办公能力</h3>
+      <ul class="tags">
+        <li data-i18n="skills.tag1">高中数学授课</li>
+        <li data-i18n="skills.tag2">教案与课件设计</li>
+        <li data-i18n="skills.tag3">学情分析与跟进</li>
+        <li data-i18n="skills.tag4">班级管理</li>
+        <li data-i18n="skills.tag5">主题班会组织</li>
+        <li data-i18n="skills.tag6">教研协作</li>
+        <li data-i18n="skills.tag7">Excel 数据处理</li>
+        <li data-i18n="skills.tag8">公众号写作</li>
+      </ul>
+    </div>
+
+    <div class="skills-two">
+      <div class="skills-col reveal">
+        <h3 class="col-title" data-i18n="skills.t2">证书</h3>
+        <ul class="certs">
+          <li><span data-i18n="cert1">教师资格证</span><em>TEACHER</em></li>
+          <li><span data-i18n="cert2">普通话一级乙等</span><em>MANDARIN</em></li>
+          <li><span data-i18n="cert3">大学英语六级（CET-6）</span><em>ENGLISH</em></li>
+          <li><span data-i18n="cert4">大学英语四级（CET-4）</span><em>ENGLISH</em></li>
+          <li><span data-i18n="cert5">计算机二级</span><em>COMPUTER</em></li>
+        </ul>
+      </div>
+
+      <div class="skills-col reveal">
+        <h3 class="col-title" data-i18n="skills.t3">兴趣特长</h3>
+        <p class="col-note" data-i18n="skills.note">按简历原文比例呈现</p>
+        <ul class="meters">
+          <li style="--v:91%">
+            <span class="m-name" data-i18n="hobby1">舞蹈</span>
+            <span class="m-bar"><i></i></span>
+            <span class="m-val">91%</span>
+          </li>
+          <li style="--v:73%">
+            <span class="m-name" data-i18n="hobby2">唱歌</span>
+            <span class="m-bar"><i></i></span>
+            <span class="m-val">73%</span>
+          </li>
+          <li style="--v:66%">
+            <span class="m-name" data-i18n="hobby3">英语</span>
+            <span class="m-bar"><i></i></span>
+            <span class="m-val">66%</span>
+          </li>
+          <li style="--v:44%">
+            <span class="m-name" data-i18n="hobby4">篮球</span>
+            <span class="m-bar"><i></i></span>
+            <span class="m-val">44%</span>
+          </li>
+        </ul>
+        <div class="desk-note">
+          <p data-i18n="skills.quote">会跳舞、能唱歌，也愿意在球场上跑一节课的时间。这些事和上课一样，都需要节奏感。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 WORKS ============ -->
+  <section class="sec" id="works">
+    <div class="sec-head reveal">
+      <span class="idx">03</span>
+      <p class="eyebrow">PRACTICE <span class="sep">/</span> <span data-i18n="works.eyebrow">实践与成果</span></p>
+      <p class="sec-intro" data-i18n="works.intro">以下内容整理自实习与校园经历，记录我实际承担的工作与结果。</p>
+    </div>
+
+    <div class="works-grid">
+      <article class="work featured reveal">
+        <div class="w-top">
+          <span class="w-kicker" data-i18n="w1.kicker">实习 · 可画第二中学</span>
+          <span class="w-big">60<span data-i18n="w1.unit">节</span></span>
+        </div>
+        <h3 data-i18n="w1.t">高中数学 · 完整跑通 60 节课</h3>
+        <p data-i18n="w1.d">独立完成高中数学教学任务，累计授课 60 节。从备课、板书到作业讲评与学情反馈，按周推进教学进度。</p>
+        <ul class="w-tags"><li data-i18n="w1.g1">独立授课</li><li data-i18n="w1.g2">备课</li><li data-i18n="w1.g3">作业讲评</li></ul>
+      </article>
+
+      <article class="work reveal">
+        <span class="w-kicker" data-i18n="w2.kicker">教研组 · 协同</span>
+        <h3 data-i18n="w2.t">把学期目标拆成可执行的周计划</h3>
+        <p data-i18n="w2.d">协同教研组完成教学计划的制定与执行，对齐进度、统一重难点，让每一周的课都有明确的落点。</p>
+        <ul class="w-tags"><li data-i18n="w2.g1">教研协作</li><li data-i18n="w2.g2">计划执行</li></ul>
+      </article>
+
+      <article class="work reveal">
+        <span class="w-kicker" data-i18n="w3.kicker">班主任 · 协助</span>
+        <h3 data-i18n="w3.t">班级管理与主题班会</h3>
+        <p data-i18n="w3.d">协助班主任处理日常班务，定期组织班会，把学习节奏和情绪状态都照顾到。</p>
+        <ul class="w-tags"><li data-i18n="w3.g1">班级管理</li><li data-i18n="w3.g2">班会组织</li></ul>
+      </article>
+
+      <article class="work reveal">
+        <span class="w-kicker" data-i18n="w4.kicker">校园媒体 · 记者部部长</span>
+        <h3 data-i18n="w4.t">单篇推文点击量破万</h3>
+        <p data-i18n="w4.d">多次撰稿并刊登于学校公众号平台，其中单篇点击量破万；获校宣传中心「先进工作者」荣誉称号。</p>
+        <ul class="w-tags"><li data-i18n="w4.g1">写作</li><li data-i18n="w4.g2">新媒体运营</li></ul>
+      </article>
+
+      <article class="work reveal">
+        <span class="w-kicker" data-i18n="w5.kicker">学生会 · 会长</span>
+        <h3 data-i18n="w5.t">制定部门职能规划，统筹协调各部门发展</h3>
+        <p data-i18n="w5.d">负责部员培训与交流会议组织，梳理各部门职能边界与协作流程，提升整体工作效率；获校宣传中心「优秀五四青年」称号。</p>
+        <ul class="w-tags"><li data-i18n="w5.g1">团队管理</li><li data-i18n="w5.g2">流程梳理</li><li data-i18n="w5.g3">跨部门协作</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ 04 RESUME ============ -->
+  <section class="sec alt" id="resume">
+    <div class="sec-head reveal">
+      <span class="idx">04</span>
+      <p class="eyebrow">RESUME <span class="sep">/</span> <span data-i18n="resume.eyebrow">个人履历</span></p>
+    </div>
+
+    <div class="resume-layout">
+    <div class="cv">
+      <div class="cv-group reveal">
+        <h3 data-i18n="cv.edu">教育背景</h3>
+        <div class="cv-item">
+          <span class="cv-date">2022.09 — 2026.06</span>
+          <div class="cv-main">
+            <p class="cv-title"><b data-i18n="cv.school">可瓦师范大学</b><span data-i18n="cv.major">应用数学 · 本科</span></p>
+            <ul>
+              <li><span data-i18n="cv.coursesLabel">主修课程：</span><span data-i18n="cv.courses">分析学、代数学、几何学、概率论</span></li>
+              <li><span data-i18n="cv.gpaLabel">GPA：</span>3.7 / 4.0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-group reveal">
+        <h3 data-i18n="cv.intern">实习经历</h3>
+        <div class="cv-item">
+          <span class="cv-date">2026.02 — 2026.05</span>
+          <div class="cv-main">
+            <p class="cv-title"><b data-i18n="cv.school2">可画第二中学</b><span data-i18n="cv.role">实习数学教师</span></p>
+            <ul>
+              <li data-i18n="cv.i1">完成高中数学教学任务，累计授课达 60 节</li>
+              <li data-i18n="cv.i2">协同教研组完成教学计划的制定与执行</li>
+              <li data-i18n="cv.i3">协助班主任进行班级管理工作，定期组织班会</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-group reveal">
+        <h3 data-i18n="cv.campus">校园经历</h3>
+        <div class="cv-items">
+        <div class="cv-item">
+          <span class="cv-date">2023.09 — 2024.06</span>
+          <div class="cv-main">
+            <p class="cv-title"><b data-i18n="cv.school3">可瓦师范大学</b><span data-i18n="cv.p1">学生会会长</span></p>
+            <ul>
+              <li data-i18n="cv.c1">负责部员的培训并组织相关交流会议</li>
+              <li data-i18n="cv.c2">制定各部门职能规划，统筹协调各部门发展，提高工作效率</li>
+              <li data-i18n="cv.c3">荣获校宣传中心「优秀五四青年」称号</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cv-item">
+          <span class="cv-date">2022.09 — 2023.06</span>
+          <div class="cv-main">
+            <p class="cv-title"><b data-i18n="cv.school4">可瓦师范大学</b><span data-i18n="cv.p2">记者部部长</span></p>
+            <ul>
+              <li data-i18n="cv.c4">多次撰稿并刊登于校公众号平台，点击量破万</li>
+              <li data-i18n="cv.c5">获校宣传中心「先进工作者」荣誉称号</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cv-group reveal">
+        <h3 data-i18n="cv.honor">所获荣誉</h3>
+        <ul class="honors">
+          <li><span class="y">2025</span><span data-i18n="h1">校优秀学生干部奖学金</span></li>
+          <li><span class="y">2024</span><span data-i18n="h2">校社会实践先进个人</span></li>
+          <li><span class="y">2023</span><span data-i18n="h3">校优秀学生奖学金</span></li>
+        </ul>
+      </div>
+    </div>
+
+      <aside class="cv-card reveal">
+        <p class="cv-card-title">PROFILE <span class="sep">/</span> <span data-i18n="cv.card">教师档案</span></p>
+        <dl>
+          <div><dt data-i18n="cv.card1">求职意向</dt><dd data-i18n="cv.card1v">中学数学教师</dd></div>
+          <div><dt data-i18n="cv.card2">教师资格证</dt><dd data-i18n="cv.card2v">已取得</dd></div>
+          <div><dt data-i18n="cv.card3">普通话</dt><dd data-i18n="cv.card3v">一级乙等</dd></div>
+          <div><dt data-i18n="cv.card4">英语</dt><dd>CET-6</dd></div>
+          <div><dt data-i18n="cv.card5">专业 GPA</dt><dd>3.7 / 4.0</dd></div>
+          <div><dt data-i18n="cv.card6">毕业时间</dt><dd>2026.06</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ 05 CONTACT ============ -->
+  <section class="sec contact" id="contact">
+    <div class="contact-inner">
+      <div class="sec-head light reveal">
+        <span class="idx">05</span>
+        <p class="eyebrow">CONTACT <span class="sep">/</span> <span data-i18n="contact.eyebrow">联系我</span></p>
+      </div>
+
+      <h2 class="contact-h reveal">
+        <span class="line" data-i18n="contact.h1">如果你们学校正在找一个</span>
+        <span class="line hl-dark" data-i18n="contact.h2">愿意把课上好的年轻数学老师</span>
+        <span class="line" data-i18n="contact.h3">欢迎来聊聊。</span>
+      </h2>
+
+      <div class="contact-grid">
+        <div class="c-item reveal">
+          <span class="c-label" data-i18n="contact.phone">电话</span>
+          <button class="c-value copy" data-copy="13066668888" type="button">130 6666 8888</button>
+        </div>
+        <div class="c-item reveal">
+          <span class="c-label" data-i18n="contact.email">邮箱</span>
+          <button class="c-value copy" data-copy="cnsupport@canva.com" type="button">cnsupport@canva.com</button>
+        </div>
+        <div class="c-item reveal">
+          <span class="c-label" data-i18n="contact.city">现居</span>
+          <p class="c-value" data-i18n="contact.cityV">广东 · 深圳</p>
+        </div>
+        <div class="c-item reveal">
+          <span class="c-label" data-i18n="contact.status">状态</span>
+          <p class="c-value"><span class="pulse" aria-hidden="true"></span><span data-i18n="contact.statusV">2026 届 · 求职中</span></p>
+        </div>
+      </div>
+
+      <div class="contact-foot">
+        <p data-i18n="contact.note">点击电话或邮箱即可复制，我会尽快回复。</p>
+        <a class="btn btn-yellow" href="#top"><span data-i18n="contact.back">回到顶部</span> <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="f-left">
+    <span class="brand-mark sm">张</span>
+    <p>© 2026 张小可 · <span data-i18n="footer.note">个人求职主页</span></p>
+  </div>
+  <p class="f-right" data-i18n="footer.made">本页由 WorkBuddy 协助搭建 · 素材均为本人形象授权</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
